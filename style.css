@@ -1,0 +1,306 @@
+body{
+    display: block;
+    margin: 0px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+/* header section styling */
+
+header{
+    display: flex;
+    justify-content: space-between;
+    background-color:#333;
+    padding: 20px;   
+}
+.menu{
+    margin-right: 120px ;  
+    
+}
+.menu a{
+    color: #fff;
+    padding-right: 15px;
+    text-decoration: none;
+}
+.logo{
+    margin-left: 100px;
+    color: #fff;
+}
+
+
+/* Landing section Styling */
+
+.landing-section{
+    background-image:url("/Applications/WEB dev/Challanges/challange:3/images/01.jpg");
+    width: 100%;
+    height: 50vh;
+    background-position: top;
+    position: relative;
+    background-size: cover;
+
+}
+.landing-content h1{
+    font-size: 32px;
+    
+}
+.landing-content{
+    height: 130px;
+    text-align: center;
+    color: white;
+    position: absolute;
+    top: 50%;
+    left: 51%;
+    transform: translate(-50%,-50%);  
+    
+}
+
+/* About Us section styling */
+.about-us{
+    display: flex;
+    justify-content: space-evenly;
+    width:80%;
+    padding: 50px;
+    margin-left: auto;
+    margin-right: auto;
+}
+.about-us img{
+    width: 45%;
+    box-shadow:  5px 5px 5px #bbb9b9;
+    border-radius: 3px; 
+}
+.about-content{
+    width:55%;
+    padding: 50px;   
+}
+
+/* Services Content Styling */
+.services{
+    background-color: #632323;
+    color: white;
+    padding: 50px;
+    
+}
+.services h3{
+    text-align: center;
+}
+.card-group{
+    display: flex;
+    justify-content: space-evenly;
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+    
+}
+
+.card{
+    border-radius: 10px;
+    border: 1px solid white;
+    width: 26%;
+    height: 200px;
+    padding: 10px 25px;
+   
+}
+.card button{
+    width: 110px;
+    border: 1px solid white;
+    background-color: #632323;
+    padding: 20px 15px;
+    color: white;
+    border-radius: 4px;
+}
+button:hover{
+    background-color: #fff;
+    color: #632323;
+    cursor: pointer;
+}
+.card p{
+    opacity: 50%;
+    padding-bottom: 10px;
+}
+
+/* Instructors section styling */
+
+.instructors-section{
+    background-color: #f4f4f4;
+    padding: 50px;
+    
+}
+.instructors-cards{
+    display: flex;
+    justify-content: space-evenly;
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.instructors-section h3{
+    text-align: center;
+}
+
+.card-dcp{
+    width: 31%;
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 3px 3px 10px #d0d0d0;
+}
+.card-dcp p{
+    padding: 0 15px;
+
+}
+.card-dcp h4{
+    text-align: center;
+}
+.card-dcp img{
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+
+}
+
+/* Pricing section styling */
+.pricing-section{
+    padding: 50px;
+    
+}
+.pricing-cards{
+    display: flex;
+    justify-content: space-evenly;
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 10px;
+}
+
+.pricing-section h3{
+    text-align: center;
+}
+
+.card-content{
+    width: 31%;
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 3px 3px 10px #d0d0d0;
+    text-align: center;
+}
+.card-content:hover{
+    transform: translate(0, -10px);
+}
+.card-content h2{
+    color:  #ff4500;
+}
+
+.card-content hr{
+    width: 90%;
+    opacity: 30%;
+
+}
+
+/* Contact Us styling section */
+.contact-us{
+    background-color:  #f4f4f4;
+    text-align: center;
+    padding: 15px;
+}
+form{
+    padding: 10px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+input,textarea{
+    width: 50%;
+    margin-top: 20px;
+    border-radius:3px ;
+    padding: 10px;
+    border: 1px;
+
+}
+.submit{
+    padding: 10px;
+    background-color:#5cb85c;
+    width: 51.5%;
+    border:1px solid #5cb85c;
+    border-radius: 3px;
+    color: white;
+    margin-bottom: 10px;
+
+}
+.submit:hover{
+    background-color: #55ac55;
+    cursor: pointer;
+}
+
+footer{
+    text-align: center;
+    background-color: #333;
+    color: white;
+    padding: 20px;
+}
+
+/* Code for responsive page (Mungon vetem ikona e menuse) */
+@media screen and (max-width:600px) {
+    .menu{
+        visibility: hidden;
+    }
+    span{
+        display: block;
+        width: 40%;
+        margin-left: 10px;
+    }
+    header{
+        height: 20px;
+    }
+    .about-us{
+        position: relative;
+        flex-direction: column;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .about-us img{
+        width: 95%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .about-content{
+        text-align: center;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    
+  
+    .card-group{
+        position: relative;
+        flex-direction: column;
+        padding: 20px;
+    }
+    .card-group .card{
+        position: relative;
+        width: 95%;
+        margin-left: auto;
+        margin-right: auto;
+        margin-bottom: 20px;
+    }
+
+    .instructors-cards{
+        position: relative;
+        flex-direction: column;
+        padding: 20px;
+    }
+    .instructors-cards .card-dcp{
+        position: relative;
+        width: 95%;
+        margin-left: auto;
+        margin-right: auto;
+        margin-bottom: 20px;
+    }
+    .pricing-cards{
+        position: relative;
+        flex-direction: column;
+        padding: 20px;
+    }
+    .pricing-cards .card-content{
+        position: relative;
+        width: 95%;
+        margin-left: auto;
+        margin-right: auto;
+        margin-bottom: 20px;
+    }
+    
+}
